@@ -1,0 +1,43 @@
+<robot
+  name="container">
+  <link
+    name="container">
+    <inertial>
+      <origin
+        xyz="3.8923E-18 -0.079562 4.8716065361408E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.079751" />
+      <inertia
+        ixx="0.000205229905497511"
+        ixy="1.72369015963729E-36"
+        ixz="-1.04433595381247E-20"
+        iyy="1.25662923133309E-20"
+        iyz="-6.25809551322149E-05"
+        izz="3.83185176415917E-21" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="1.5707963267949 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://container/meshes/container.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://container/meshes/container.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
